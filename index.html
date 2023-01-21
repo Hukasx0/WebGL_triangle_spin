@@ -20,16 +20,22 @@
 <body>
     <main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.3.2/gl-matrix-min.js"></script>
+    <script src="initialize.js"> defer</script>
+    <script src="display.js" defer></script>
     <script src="main.js" defer></script>
     <canvas id="glCanvas" width="600" height="400"></canvas>
     <br>
     <button id="stopBtn">Stop/Start</button>
     <button id="btnX">Spin X</button>
     <button id="btnY">Spin Y</button>
+    <button id="btnZ">Spin Z</button>
     <button id="resetBtn">Reset</button>
     <br>
     <label for="velocity">velocity</label>
     <input type="number" name="velocity" id="velocity" value="10">
+    <br>
+    <label for="bgColor">background color</label>
+    <input type="color" name="bgColor" id="bgColor">
 </main>
 <footer>
     <p>by <a href="https://github.com/hukasx0" target="_blank">Hukasx0</a></p>
